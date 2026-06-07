@@ -147,7 +147,7 @@ else
 fi
 
 # chromadb-client (HTTP-only) conflicts with the full chromadb package. If
-# it got installed (e.g., from an older requirements-optional.txt), remove
+# it got installed (e.g., from an older reirements-optional.txt), remove
 # it to prevent ChromaDB from silently failing in HTTP-only mode.
 if "$VENV_PY" -m pip show chromadb-client >/dev/null 2>&1; then
   echo "▶ Cleaning up conflicting chromadb-client package…"
